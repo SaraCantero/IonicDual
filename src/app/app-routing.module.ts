@@ -29,6 +29,11 @@ const routes: Routes = [
   },
   {
     path: 'pagina2',
+    loadChildren: () => import('./pagina2/pagina2.module').then( m => m.Pagina2PageModule)
+  },
+
+  {
+    path: 'pagina2',
     loadChildren: () => import('./pagina2/pagina2.module').then(m => m.Pagina2Module)
   },
 ];
