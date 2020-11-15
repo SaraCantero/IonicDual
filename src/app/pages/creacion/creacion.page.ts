@@ -9,7 +9,17 @@ export class CreacionPage implements OnInit {
 
   constructor() { }
 
+  creacion = {
+    fecha: '',
+    actividad: ''
+  };
+
   ngOnInit() {
+  }
+
+  onSubmitTemplate() {
+    console.log('Form submit');
+    console.log(this.creacion);
   }
 
 }
