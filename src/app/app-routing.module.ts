@@ -26,7 +26,8 @@ const routes: Routes = [
   {
     path: 'pagina1',
     loadChildren: () => import('./pagina1/pagina1.module').then( m => m.Pagina1PageModule)
-  },  {
+  },
+  {
     path: 'listado',
     loadChildren: () => import('./pages/listado/listado.module').then( m => m.ListadoPageModule)
   },
@@ -45,6 +46,6 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
   ],
-  exports: [RouterModule]
+  exports: [RouterModule] //jsdoosmdofvmo
 })
 export class AppRoutingModule { }
