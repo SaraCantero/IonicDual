@@ -25,7 +25,7 @@ export class TodoService {
  actions => { // Esto lo hacemos para iterar sobre todos los documentos
  return actions.map(a => {
  const data = a.payload.doc.data();
- const id = a.payload.doc.id;
+ const id = a.payload.doc['id'];
  return { id, ...data };
  });
  }
