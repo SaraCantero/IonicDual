@@ -30,7 +30,8 @@ const routes: Routes = [
   {
     path: 'pagina2',
     loadChildren: () => import('./pagina2/pagina2.module').then( m => m.Pagina2PageModule)
-  },  {
+  },
+  {
     path: 'listado',
     loadChildren: () => import('./pages/listado/listado.module').then( m => m.ListadoPageModule)
   },
@@ -42,7 +43,16 @@ const routes: Routes = [
     path: 'asistencia',
     loadChildren: () => import('./pages/asistencia/asistencia.module').then( m => m.AsistenciaPageModule)
   },
-
+  //Firebase
+  {
+    path: 'details/:id',
+    loadChildren: () => import('./pages/todo-details/todo-details.module').then( m => m.TodoDetailsPageModule)
+  },
+  { 
+    path: 'details', 
+    loadChildren: './pages/todo-details/tododetails.module#TodoDetailsPageModule' 
+  },
+  //Firebase
 ];
 
 @NgModule({
