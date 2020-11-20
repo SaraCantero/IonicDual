@@ -50,7 +50,7 @@ const routes: Routes = [
   },
   { 
     path: 'details', 
-    loadChildren: './pages/todo-details/tododetails.module#TodoDetailsPageModule' 
+    loadChildren: './pages/todo-details/todo-details.module#TodoDetailsPageModule' 
   },
   //Firebase
 ];
